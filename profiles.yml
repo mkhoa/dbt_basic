@@ -5,6 +5,7 @@ default:
       type: bigquery
       method: service-account
       project: "{{ env_var('GCP_PROJECT') }}"
+      location: US
       dataset: dbt_nkhoa
       threads: 4 # Must be a value of 1 or greater
       keyfile: credential.json
