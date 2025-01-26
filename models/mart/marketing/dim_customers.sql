@@ -17,6 +17,10 @@ orders as (
 
 ),
 
+payments as (
+    select * from {{ ref ('stg_payments') }}
+),
+
 customer_orders as (
 
     select
